@@ -22,7 +22,7 @@
 
   <!-- Theme CSS -->
   <link rel="stylesheet" href="assets/css/theme.min.css">
-  <title>Clients</title>
+  <title>Add Vaccine</title>
 
 
 </head>
@@ -70,16 +70,16 @@
                 Menu
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="clients.html"><i class="fas fa-fw fa-clipboard"></i>Clients</a>
+                <a class="nav-link " href="clients.html"><i class="fas fa-fw fa-clipboard"></i>Clients</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="staff.html"><i class="fas fa-fw fa-clipboard"></i>Staffs</a>
+                <a class="nav-link " href="staff.html"><i class="fas fa-fw fa-clipboard"></i>Staffs</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="vaccination.html"><i class="fas fa-fw fa-clipboard"></i>Vaccinations</a>
+                <a class="nav-link active" href="vaccination.html"><i class="fas fa-fw fa-clipboard"></i>Vaccinations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="animals.html"><i class="fas fa-fw fa-clipboard"></i>Animals</a>
+                <a class="nav-link " href="animals.html"><i class="fas fa-fw fa-clipboard"></i>Animals</a>
               </li>
             </ul>
           </div>
@@ -100,12 +100,12 @@
         <div class="row">
           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <div class="page-header">
-              <h2 class="pageheader-title">Clients</h2>
+              <h2 class="pageheader-title">Add Animal</h2>
               <div class="page-breadcrumb">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Clients</li>
+                    <li class="breadcrumb-item active" aria-current="page">Add Vaccine</li>
                   </ol>
                 </nav>
               </div>
@@ -122,60 +122,96 @@
         </div>
  
   
-        <div class="row">
-          <!-- ============================================================== -->
-          <!-- fixed header  -->
-          <!-- ============================================================== -->
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style="
-          margin-bottom: 15px;
-      ">
-      <div class="card shadow-sm mb-5">
-        <div class="card-body">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">Phone Number</th>
-                <th scope="col">Email</th>
-                <th scope="col">Address</th>
-                <th scope="col">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@twitter</td>
-                <td> <a href="#" class="btn btn-rounded btn-danger">Delete</a></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@twitter</td>
-                <td> <a href="#" class="btn btn-rounded btn-danger">Delete</a></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-                <td> <a href="#" class="btn btn-rounded btn-danger">Delete</a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-          </div>
-          <!-- ============================================================== -->
-          <!-- end fixed header  -->
-          <!-- ============================================================== -->
-        </div>
+
+           <!-- basic form  -->
+            <!-- ============================================================== -->
+            <div class="row">
+              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                <div class="card mb-5 shadow-sm">
+                  <div class="card-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="input-select">Client Name</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Pet Name</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Pet Category</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Pet Age</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+            
+                      <div class="form-group">
+                        <h5>Pet Gender</h5>
+                        <label class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" name="radio-inline" checked="" class="custom-control-input"><span
+                            class="custom-control-label">Male</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" name="radio-inline" class="custom-control-input"><span
+                            class="custom-control-label">Female</span>
+                        </label>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Cat Vaccine</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Dog Vaccine</label>
+                        <select class="form-control" id="input-select">
+                          <option disabled selected>Select Name</option>
+                          <option>Ali</option>
+                          <option>Haider</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="input-select">Next Date</label>
+                        <div class="input-group date" id="datetimepicker4" data-target-input="nearest">
+                          <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker4" />
+                          <div class="input-group-append" data-target="#datetimepicker4" data-toggle="datetimepicker">
+                            <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
+                        <button class="btn btn-primary" type="submit">Add Vaccine</button>
+                      </div>
+                    </form>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- end basic form  -->
+    
 
       </div>
       <!-- ============================================================== -->
